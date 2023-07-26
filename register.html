@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <link rel="icon" href="./files/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body class="register-body">
+
+    <nav>
+        <img src="./files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
+
+        <ul class="navbar">
+            <li>
+                <a href="./index.html">Home</a>
+                <a href="./index.html#locations">Locations</a>
+                <a href="./index.html#package">Packages</a>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="registration">
+        <div class="register-form">
+            <h1>Register <span>Here</span></h1>
+            <form action="connect1.php"  method="post">
+
+                <input type="text" name="myname1" placeholder="Name" id="name" required>
+                <input type="email" name="myemail" placeholder="Email-Id" id="" required>
+                <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
+                <input type="number" name="myage" placeholder="Age" id="" required>
+                <h4>Gender</h4>
+                <label for="gender">Gender:</label>&nbsp; &nbsp; &nbsp;
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <h4>Departure</h4>
+                <input type="datetime-local" name="departuredate" id="" required>
+                <h4>Return</h4>
+                <input type="datetime-local" name="returndate" id="" required>
+                <h4>Travel Destination</h4>
+                <select id="td" name="td">
+                <option value="Pune" name="td" id=""> Pune &nbsp; &nbsp;
+                <option value="Nashik" name="td" id=""> Nashik &nbsp; &nbsp;
+                <option value="Indore" name="td" id=""> Indore &nbsp; &nbsp;
+                <option value="Nagpur" name="td" id=""> Nagpur &nbsp; &nbsp;
+                <option value="Mumbai" name="td" id=""> Mumbai &nbsp; &nbsp;
+                <option value="Delhi" name="td" id=""> Delhi &nbsp; &nbsp;
+                <option value="Shimla" name="td" id=""> Shimla &nbsp; &nbsp;
+                <option value="Luknow" name="td" id=""> Luknow &nbsp; &nbsp;
+                <option value="Ajmer" name="td" id=""> Ajmer &nbsp; &nbsp;
+                <option value="Ludiana" name="td" id=""> Ludiana &nbsp; &nbsp;
+                <option value="Amritsar" name="td" id=""> Amritsar &nbsp; &nbsp;
+                <option value="Kanpur" name="td" id=""> Kanpur &nbsp; &nbsp;
+                <option value="Kota" name="td" id=""> Kota &nbsp; &nbsp;
+                <option value="Allahabad" name="td" id=""> Allahabad &nbsp; &nbsp;
+                <option value="Jaipur" name="td" id=""> Jaipur &nbsp; &nbsp;
+                <option value="Srinagar" name="td" id=""> Srinagar &nbsp; &nbsp;
+                <option value="Chandigarh" name="td" id=""> Chandigarh &nbsp; &nbsp;
+                <option value="Vanarasi" name="td" id=""> Vanarasi &nbsp; &nbsp;
+                <option value="Bhopal" name="td" id=""> Bhopal&nbsp; &nbsp;
+                <option value="Raipur" name="td" id=""> Raipur &nbsp; &nbsp;
+                <option value="Gwalior" name="td" id=""> Gwalior &nbsp; &nbsp;
+                <option value="Jabalpur" name="td" id=""> Jabalpur &nbsp; &nbsp;
+                <option value="Bilaspur" name="td" id=""> Bilaspur &nbsp; &nbsp;
+                <option value="Rajapura" name="td" id=""> Rajapura &nbsp; &nbsp;
+                <option value="Pataliputra" name="td" id=""> Pataliputra &nbsp; &nbsp;
+                <option value="Champapuri" name="td" id=""> Champapuri &nbsp; &nbsp;
+                <option value="Bangarh" name="td" id=""> Bangarh &nbsp; &nbsp;
+                <option value="Tamralipta" name="td" id=""> Tamralipta &nbsp; &nbsp;
+                <option value="Katak" name="td" id=""> Katak &nbsp; &nbsp;
+                <option value="Tosali" name="td" id=""> Tosali &nbsp; &nbsp;
+                <option value="Kochi" name="td" id=""> Kochi &nbsp; &nbsp;
+                <option value="Madurai" name="td" id=""> Madurai &nbsp; &nbsp;
+                <option value="Bengaluru" name="td" id=""> Bengaluru &nbsp; &nbsp;
+                
+                                   
+
+
+
+
+                <option value="Chennai" name="td" id=""> Chennai</option> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </select>
+                <br> <br>
+                <h4>Package</h4>
+                <input type="radio" name="locations" id="loc1" required> Bronze &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="locations" id="loc1"> Silver &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="locations" id="loc1"> Gold &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="locations" id="loc1"> Platinum &nbsp; &nbsp; &nbsp;
+                <br> <br>
+                <input type="checkbox" name="t&c" id="" checked required> I accept the Terms & Conditions.
+                <br> <br>
+                <input type="submit" value="Submit" class="submitbtn">
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+    <!-- Javascript -->
+    <script>
+        function validateform() {
+            var tel = document.getElementById("phonenum").value;
+
+            if (tel.length < 10) {
+                alert("Phone number must be of atleast 10 digits!");
+                return false;
+            } else if (isNaN(tel)) {
+                alert("Phone number should not include character!");
+                return false;
+            }
+            return true;
+        }  
+    </script>
+
+</body>
+
+</html>
